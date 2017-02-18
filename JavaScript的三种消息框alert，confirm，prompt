@@ -2,11 +2,14 @@
 <html>  
 <head>  
 <script type="text/javascript">  
-function show_alert(){  
+function show_alert(){            //alert是弹出警告框，在文本里面加入\n就可以换行。
     alert('第一行\n第二行');  
 }  
   
-function show_confirm(){  
+function show_confirm(){             
+/*confirm弹出确认框，会返回布尔值，通过这个值可以判断点击时确认还是取消。
+    true表示点击了确认，false表示点击了取消。
+  */
     var result = confirm('是否删除！');  
     if(result){  
         alert('删除成功！');  
@@ -15,7 +18,7 @@ function show_confirm(){
     }  
 }  
   
-function show_prompt(){  
+function show_prompt(){                            //prompt弹出输入框，点击确认返回输入框中的值，点击取消返回null。
     var value = prompt('输入你的名字：', '默认名字');  
     if(value == null){  
         alert('你取消了输入！');  
